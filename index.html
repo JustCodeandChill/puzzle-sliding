@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Puzzle slide game</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="header-text" data-text="Puzzle Sliding Game">
+        Puzzle Sliding Game
+      </h1>
+    </div>
+    <div id="main" class="row">
+      <div id="left" class="col-xs-12 col-md-8 col-lg-8">
+        <h2 class="left-text">Play ground</h2>
+        <div id="wrapper"></div>
+        <div id="hint" class="hidden-sm hidden-xs"> 
+            <h4>Got Stuck? Check out these resources</h4>
+            <div class="helper">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=NoUFgLGVVgw">How to win 3x3 game</a></p>
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=NXRIrP1k4dE">How to win 4x4 game</a></p>
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=P9Xib-dWlqU">How to win at any size game</a></p>
+            </div>
+        </div>
+      </div>
+
+      <div id="right" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h2 class="left-text">Original image</h2>
+        <br />
+        <div id="img" class="center-el"></div>
+        <div  class="margin-t">
+            <h3>Movement count: </h3>
+            <h3 id="counter"></h3>
+        </div><br/>
+        <button id="shuffle" class="btn btn-primary">Shuffle</button>
+        <button id="return" class="btn btn-warning">Return Original</button>
+        <button id="new" class="btn btn-success">New Puzzle</button>
+      </div>
+    </div>
+
+    <script src="scripts/Cell.js"></script>
+    <script src="./scripts/PicturePuzzle.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
