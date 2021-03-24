@@ -36,6 +36,10 @@ class PicturePuzzle {
     return div;
   }
 
+  destroy() {
+      this.el.style.display = 'none';
+  }
+
   updateReport() {
     this.report.innerHTML = this.counter;
   }
