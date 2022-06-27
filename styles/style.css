@@ -4,10 +4,9 @@
 
 body,
 html {
-  height: 95%;
   margin: 0;
   padding: 0;
-  min-width: 800px;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -19,27 +18,28 @@ a {
 }
 
 #main {
-  height: 100%;
   width: 100%;
-  min-width: 800px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 #left {
-  height: 100%;
+  width: 100%;
   font-weight: 700;
   background-color: #fad02c;
   text-align: center;
   margin: 0;
+  z-index: 99;
+  padding-bottom: 20px;
 }
 #wrapper {
   margin-top: 30px;
 }
 
 #right {
-  height: 100%;
+  width: 100%;
   background-color: #bfd7ed;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 #hint {
@@ -93,6 +93,19 @@ a {
 }
 
 .margin-t {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 /* #FD49A0 */
+
+@media (min-width: 800px) {
+  #left {
+    width: 70%;
+    height: 100vh;
+    padding-bottom: 0;
+  }
+
+  #right {
+    width: 30%;
+    height: 100vh;
+  }
+}
